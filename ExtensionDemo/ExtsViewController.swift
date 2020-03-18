@@ -20,3 +20,13 @@ class ExtsViewController: UIViewController {
      }
 }
 
+extension ExtsViewController: ExtsDelegate {
+    func numberOfSections(_ numberOfSections: Int) {
+        print("number of Sections: ", numberOfSections)
+    }
+    
+    func numberOfRows(_ numberOfRows: Int) {
+        print("number of Rows in each Section: ", numberOfRows)
+    }
+}
+
